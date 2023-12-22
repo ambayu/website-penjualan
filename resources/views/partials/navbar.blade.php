@@ -21,36 +21,10 @@
                             
                             </li>
                                @else
-
-                               
-                               <li class="dinone">Contact Us:
-                                   <img style="margin-right: 15px;margin-left: 15px;" src="/images/phone_icon.png" alt="#">
-                                   @if(isset($about) && isset($about->contact))
-                                       <a href="#">{{ $about->contact }}</a>
-                                   @else
-                                       <!-- Provide a default message or handle the absence of $about->contact -->
-                                       <span>Contact information unavailable</span>
-                                   @endif
-                               </li>
-                               <li class="dinone">
-                                <img style="margin-right: 15px;" src="/images/mail_icon.png" alt="#">
-                                @if(isset($about) && isset($about->email))
-                                    <a href="#">{{ $about->email }}</a>
-                                @else
-                                    <!-- Provide a default message or handle the absence of $about->email -->
-                                    <span>Email information unavailable</span>
-                                @endif
-                            </li>
-                            <li class="dinone">
-                                <img style="margin-right: 15px;height: 21px;position: relative;top: -2px;" src="/images/location_icon.png" alt="#">
-                                @if(isset($about) && isset($about->alamat))
-                                    <a href="#">{{ $about->alamat }}</a>
-                                @else
-                                    <!-- Provide a default message or handle the absence of $about->alamat -->
-                                    <span>Address information unavailable</span>
-                                @endif
-                            </li>
-                                                            <li class="button_user"><a class="button active" href="/login">Login</a><a class="button" href="/register">Register</a></li>
+                                <li class="dinone">Contact Us : <img style="margin-right: 15px;margin-left: 15px;" src="/images/phone_icon.png" alt="#"><a href="#">{{ $about->contact }}</a></li>
+                                <li class="dinone"><img style="margin-right: 15px;" src="/images/mail_icon.png" alt="#"><a href="#">{{ $about->email }}</a></li>
+                                <li class="dinone"><img style="margin-right: 15px;height: 21px;position: relative;top: -2px;" src="/images/location_icon.png" alt="#"><a href="#">{{ $about->alamat }}</a></li> 
+                                <li class="button_user"><a class="button active" href="/login">Login</a><a class="button" href="/register">Register</a></li>
                                 @endauth
                                
                             

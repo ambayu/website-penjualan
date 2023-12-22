@@ -85,7 +85,7 @@
             </div>
             <div class="copyright">
                 <div class="container">
-                    <p>© 2022 All Rights Reserved. pateenXfatboyfactory</a></p>
+                    <p>© 2023 All Rights Reserved.</a></p>
                 </div>
             </div>
         </div>
